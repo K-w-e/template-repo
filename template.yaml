@@ -1,0 +1,19 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: Template
+  title: Template
+  description: Lorem ipsum
+spec:
+  owner: user:guest
+  type: service
+
+  steps:
+    - id: step1
+      name: First log
+      action: debug:log
+      input:
+        message: hello
+
+  output:
+    message: ":)"
